@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Abadan</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Abadan, Iran</h1>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- Hamburger icon -->
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#places">Places to Visit</a></li>
+                <li><a href="#map">World Map</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h2>Discover Abadan</h2>
+        <p>Abadan is a beautiful city located in southwestern Iran, known for its rich history, oil refinery, and cultural heritage. It is situated on Abadan Island in the Arvand River.</p>
+        <!-- Local images gallery -->
+        <div class="gallery">
+            <img src="https://th.bing.com/th/id/R.08c6a2b94c2130e1f23a53740eb2e333?rik=Tzi7jRJeVJc9%2bw&pid=ImgRaw&r=0/300x200" alt="Abadan Oil Refinery">
+            <img src="https://th.bing.com/th/id/OIP.5P9UGn2EfqfuTxvXHpiMyAHaFj?w=226&h=180&c=7&r=0&o=5&pid=1.7/300x200" alt="Minoo Island">
+            <img src="https://th.bing.com/th/id/R.656c7915e8487d3d02a4e1f10a6fe1f5?rik=ulVwZhxTQJUzcQ&riu=http%3a%2f%2fwww.tishineh.com%2ftour%2fPictures%2fItem%2f206%2f5126.jpg&ehk=KqkK5S3efJoblfg3llnreCvpqK4v7XNgt8%2ffoBPNnjs%3d&risl=&pid=ImgRaw&r=0/300x200" alt="Abadan Museum">
+            <img src="https://th.bing.com/th/id/R.6d6fb8c48a5a976d6315cd49926d9d37?rik=E8k%2bGiM0tnu2dQ&pid=ImgRaw&r=0/300x200" alt="Rangooniha Mosque">
+            <img src="https://th.bing.com/th/id/OIP.Kg66WL-DY7B8D-_pNyn6bQHaE7?pid=ImgDet&w=474&h=315&rs=1/300x200" alt="love Reyban">
+            <img src="https://blog.rahbal.com/wp-content/uploads/2020/11/%D8%A8%D9%88%D9%88%D8%A7%D8%B1%D8%AF%D9%87.jpg/300x200" alt="Water Tower">
+        </div>
+    
+        <!-- Fullscreen Image Viewer -->
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+    </section>
+    
+
+    <section id="history" class="section">
+        <h2>History of Abadan</h2>
+        <p>Abadan has a deep and complex history, dating back to ancient times. It became particularly significant in the 20th century due to its oil refinery, one of the largest in the world. Abadan played a crucial role during the Iran-Iraq war and is known for its resilience and strategic importance.</p>
+    </section>
+
+    <section id="places" class="section">
+        <h2>Places to Visit in Abadan</h2>
+        <ul>
+            <li>Abadan Oil Refinery</li>
+            <li>Minoo Island</li>
+            <li>Abadan Museum</li>
+            <li>Palace of Culture and Art</li>
+        </ul>
+    </section>
+
+    <!-- New World Map Section -->
+    <section id="map" class="section">
+        <h2>Where is Abadan?</h2>
+        <p>Abadan is located in southwestern Iran, near the border with Iraq. It is on Abadan Island in the Arvand River.</p>
+        <!-- Embed a Google Map -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6547314.159078318!2d39.323791799999996!3d29.964568799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fc492f5299ab9ad%3A0x59f349fbf1e780d!2sAbadan%2C%20Khuzestan%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1695231430620!5m2!1sen!2s" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section id="feedback" class="section">
+        <h2>Feedback</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="feedback-name" name="feedback-name" placeholder="Your Name"><br><br>
+
+            <label for="rating">Rate Abadan (1 to 5):</label><br>
+            <select id="rating" name="rating">
+                <option value="1">1 - Poor</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 - Excellent</option>
+            </select><br><br>
+
+            <label for="comments">Your Feedback:</label><br>
+            <textarea id="comments" name="comments" rows="4" placeholder="Tell us what you think..."></textarea><br><br>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Discover Abadan | All Rights Reserved, Created by Hamid Company</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

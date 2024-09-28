@@ -1,0 +1,181 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Section Styling */
+.section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.section p, .section ul {
+    margin-bottom: 15px;
+}
+
+.section ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    justify-content: center; /* Centers the images */
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Ensures images wrap if there are too many */
+}
+
+.gallery img {
+    width: 15%; /* Increased width for better visibility */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for images */
+.gallery img:hover {
+    transform: scale(1.2); /* Enlarges the image on hover */
+}
+
+/* Lightbox container - hidden by default */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lightbox image */
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Close button for the lightbox */
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form Styling */
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    position: absolute; /* Position it in the top right corner */
+    top: 15px;
+    right: 20px;
+}
+
+/* Responsive Media Query for Hamburger Menu */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the navigation links initially on smaller screens */
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav .hamburger {
+        display: block; /* Show the hamburger icon for mobile/tablet screens */
+    }
+
+    nav.active ul {
+        display: flex; /* Show the nav links when the menu is active */
+    }
+}
